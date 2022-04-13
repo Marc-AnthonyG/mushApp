@@ -12,7 +12,7 @@ import colors from "../config/colors";
 import text_en from "../config/text_en";
 import AppButton from "../components/AppBasic/AppButton";
 
-export default function WelcomeScreen(props) {
+export default function WelcomeScreen({ navigation }) {
   return (
     <ImageBackground
       source={require("../assets/background.jpg")}
@@ -25,8 +25,12 @@ export default function WelcomeScreen(props) {
       </View>
 
       <View style={styles.buttonContainer}>
-        <AppButton title="Login" />
-        <AppButton title="register" color="secondary" />
+        <AppButton title="Login" onPress={() => navigation.navigate("Login")} />
+        <AppButton
+          title="register"
+          color="secondary"
+          onPress={() => navigation.navigate("Registrer")}
+        />
       </View>
     </ImageBackground>
   );

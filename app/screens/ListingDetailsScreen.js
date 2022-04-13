@@ -1,8 +1,8 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
 
-import Card from "../components/Card";
-import ListItem from "../components/ListItem";
+import Card from "../components/list/Card";
+import ListItem from "../components/list/ListItem";
 
 function ListingDetailsScreen(props) {
   return (
